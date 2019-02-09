@@ -1,9 +1,11 @@
-html, body{
+html, body, p{
     margin:0px;
     padding:0px;
 }
 
 div, main, section, header, footer, canvas{
+    margin:0px;
+    padding:0px;
     position: relative;
     box-sizing: border-box;
 }

@@ -1,6 +1,111 @@
 @import 'reset.css';
+@import 'button.css';
+
+html, body{
+    font-family: 'Open Sans', sans-serif;
+}
 
 .container-full-screen{
     height: 100vh;
+    max-height: 100vh;
     position: relative;
+    overflow: hidden;
+}
+
+.container-full-screen > footer{
+    position: absolute;
+    z-index: 3;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    padding:16px 0px;
+}
+
+.container-full-screen > footer > p {
+    text-align: center
+}
+
+.image-holder{
+    margin-top:80px;
+    text-align: center;
+}
+
+.image-holder > img{
+    width: 250px;
+}
+
+.particles{
+    opacity: 0.6;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.contact-list-holder{
+    padding:0px 128px;
+    padding-top:54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.divider{
+    opacity: 0.4;
+    border-bottom: 1px solid #808080;
+    margin:4px 0px;
+}
+
+#particle-background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    filter:blur(2px);
+    z-index:1;
+}
+
+#particle-foreground{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+}
+
+#main-content{
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+
+@media screen and (max-width:1025px){
+    .contact-list-holder{
+        padding-left:0px;
+        padding-right:0px;
+    }
+
+    .contact-list-holder .custom-button > img{
+        width:125px;
+    }
+}
+
+@media screen and (max-width:721px){
+    #main-content{
+        padding-left:32px;
+        padding-right:32px;
+    }
+
+    .contact-list-holder .custom-button > img{
+        width:100px;
+    }
 }

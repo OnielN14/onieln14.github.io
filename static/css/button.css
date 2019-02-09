@@ -1,0 +1,18 @@
+.custom-button {
+    display: inline-block;
+    position: relative;
+}
+.custom-button > img{
+    width:150px;
+    transition: filter ease 0.3s;
+}
+
+.custom-button:hover >img{
+    position: relative;
+    filter:invert(0.2);
+}
+
+a, a:visited, a:link, a:active, a:hover{
+    color:#808080;
+    text-decoration: none;
+}
