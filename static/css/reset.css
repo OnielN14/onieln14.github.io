@@ -1,0 +1,9 @@
+html, body{
+    margin:0px;
+    padding:0px;
+}
+
+div, main, section, header, footer, canvas{
+    position: relative;
+    box-sizing: border-box;
+}
